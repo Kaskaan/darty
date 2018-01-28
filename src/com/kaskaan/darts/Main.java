@@ -1,7 +1,7 @@
 package com.kaskaan.darts;
 
 //extends Application
-public class Main  {
+public class Main {
 
 //    @Override
 //    public void start(Stage primaryStage) throws Exception{
@@ -13,8 +13,12 @@ public class Main  {
 
     public static void main(String[] args) {
 //        launch(args);
-    Game game = new Game.Builder("Konrad").newPlayer("Malwina").newPlayer("Hubuś").newPlayer("Bożena").build().pl;
-        game.play();
+        new Game.Builder("Konrad")
+                .newPlayer("Malwina")
+                .newPlayer("Hubert")
+                .newPlayer("Andrzej")
+                .build()
+                .play();
     }
 
 }
